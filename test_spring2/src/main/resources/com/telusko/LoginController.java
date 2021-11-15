@@ -10,9 +10,8 @@ public void configureDefaultServletHandling(DefaultServletHandlerConfigurer conf
 @Controller
 public class LoginController {
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ModelAndView login(HttpServletRequest request,
-        HttpServletResponse response) {
-        System.out.println("hello world !!");
+    public ModelAndView login(HttpServletRequest request,HttpServletResponse response) {
+        System.out.println("hello nik !!");
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
         String message;
